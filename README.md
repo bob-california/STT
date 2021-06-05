@@ -11,7 +11,7 @@ Small app for Speech To Text model development.
 Technologies used:
 
 - [Coqui STT](https://github.com/coqui-ai/STT)
-- [streamlit)](https://github.com/streamlit/streamlit)
+- [streamlit](https://github.com/streamlit/streamlit)
 
 Download the model from coqui before starting:
 
