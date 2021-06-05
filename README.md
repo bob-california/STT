@@ -1,5 +1,7 @@
 # Speech to Text
 
+![app frontend](./images/STT_app.png)
+
 Small app for Speech To Text model development.
 
 - Easy to upload audio file
