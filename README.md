@@ -13,12 +13,29 @@ Technologies used:
 - [Coqui STT](https://github.com/coqui-ai/STT)
 - [streamlit](https://github.com/streamlit/streamlit)
 
-Download the model from coqui before starting:
+## Download models
+
+Download the models from coqui before starting: https://coqui.ai/models. Then change the `settings.py` file with the correct path to model and scorer.
+
+### English
 
 ```bash
-wget https://github.com/coqui-ai/STT/releases/download/v0.9.3/coqui-stt-0.9.3-models.pbmm
-wget https://github.com/coqui-ai/STT/releases/download/v0.9.3/coqui-stt-0.9.3-models.scorer
+wget https://github.com/coqui-ai/STT/releases/download/v0.9.3/coqui-stt-0.9.3-models.pbmm -P models/english
+wget https://github.com/coqui-ai/STT/releases/download/v0.9.3/coqui-stt-0.9.3-models.scorer -P models/english
 ```
+
+### French
+
+- ```bash
+  wget https://github.com/coqui-ai/STT-models/releases/download/french/commonvoice-fr/v0.6/model.pbmm -P models/french_common
+  wget https://github.com/coqui-ai/STT-models/releases/download/french/commonvoice-fr/v0.6/fr-cvfr-2-prune-kenlm.scorer -P models/french_common
+  ```
+- ```bash
+  wget https://github.com/coqui-ai/STT-models/releases/download/french/jaco-assistant/v0.0.1/model.pbmm -P models/french_jaco
+  wget https://github.com/coqui-ai/STT-models/releases/download/french/jaco-assistant/v0.0.1/kenlm_fr.scorer -P models/french_jaco
+  ```
+
+## Start app
 
 Run following command to start app:
 

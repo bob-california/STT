@@ -4,11 +4,14 @@ services:
   app:
     container_name: app
     restart: unless-stopped
+    image: stt_app
     build:
-      context: "."
+      context: app
       dockerfile: Dockerfile
     volumes:
-      - ./main.py:/main.py
-    command: bash -c "streamlit run main.py"
+      - ./app:/app
+      - ./models:/models
+    devices:
+      - /dev/snd:/dev/snd
     ports:
       - 8501:8501

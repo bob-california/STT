@@ -1,3 +1,5 @@
 *.pbmm
 *.scorer
 .vscode
+*.pyc
+*.wav
